@@ -1,0 +1,13 @@
+mat-list {
+  padding: 0;
+}
+.virtual-scroll {
+  width: 100%;
+  // the 64 comes from the top bar and its depends on screen size
+  height: calc(100vh - 64px - 16px);
+  //background-color: antiquewhite;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
