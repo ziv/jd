@@ -39,6 +39,15 @@
     "jd-e2e": {
       "tags": [],
       "implicitDependencies": ["jd"]
+    },
+    "messenger-components": {
+      "tags": []
+    },
+    "messenger-data": {
+      "tags": []
+    },
+    "user-data": {
+      "tags": []
     }
   }
 }

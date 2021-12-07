@@ -182,6 +182,113 @@
           }
         }
       }
+    },
+    "messenger-components": {
+      "projectType": "library",
+      "root": "libs/messenger-components",
+      "sourceRoot": "libs/messenger-components/src",
+      "prefix": "jd",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "outputs": ["dist/libs/messenger-components"],
+          "options": {
+            "project": "libs/messenger-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/messenger-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/messenger-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/messenger-components"],
+          "options": {
+            "jestConfig": "libs/messenger-components/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/messenger-components/src/**/*.ts",
+              "libs/messenger-components/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "messenger-data": {
+      "root": "libs/messenger-data",
+      "sourceRoot": "libs/messenger-data/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/messenger-data",
+            "tsConfig": "libs/messenger-data/tsconfig.lib.json",
+            "packageJson": "libs/messenger-data/package.json",
+            "main": "libs/messenger-data/src/index.ts",
+            "assets": ["libs/messenger-data/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/messenger-data/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/messenger-data"],
+          "options": {
+            "jestConfig": "libs/messenger-data/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "user-data": {
+      "root": "libs/user-data",
+      "sourceRoot": "libs/user-data/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/user-data",
+            "tsConfig": "libs/user-data/tsconfig.lib.json",
+            "packageJson": "libs/user-data/package.json",
+            "main": "libs/user-data/src/index.ts",
+            "assets": ["libs/user-data/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/user-data/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/user-data"],
+          "options": {
+            "jestConfig": "libs/user-data/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
@@ -209,7 +316,8 @@
     "@nrwl/angular:library": {
       "style": "scss",
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "strict": false
     },
     "@nrwl/angular:component": {
       "style": "scss"

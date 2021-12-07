@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@jd/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@jd/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@xprjs/messenger-components": ["libs/messenger-components/src/index.ts"],
+      "@xprjs/messenger-data": ["libs/messenger-data/src/index.ts"],
+      "@xprjs/user-data": ["libs/user-data/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
