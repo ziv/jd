@@ -1,20 +1,14 @@
-<mat-toolbar class='mat-elevation-z5'>
-  <button mat-icon-button>
-    <mat-icon>rocket_launch</mat-icon>
-  </button>
-  <span>Messenger</span>
-  <span class='spacer'></span>
-  <jd-messenger-menu></jd-messenger-menu>
-</mat-toolbar>
+<jd-messenger-toolbar></jd-messenger-toolbar>
 <main>
-
   <mat-list>
-    <cdk-virtual-scroll-viewport itemSize='56' class='virtual-scroll'>
-      <mat-list-item *cdkVirtualFor='let c of conversations' [routerLink]='[c.id]'>
-        <mat-icon matListIcon>{{c.icon}}</mat-icon>
-        <p matLine>{{c.label}}</p>
+    <cdk-virtual-scroll-viewport [itemSize]="56" class="virtual-scroll">
+      <mat-list-item
+        *cdkVirtualFor="let c of conversations$ | async"
+        [routerLink]="[c.id]"
+      >
+        <mat-icon matListIcon>{{ c.icon }}</mat-icon>
+        <p matLine>{{ c.label }}</p>
       </mat-list-item>
     </cdk-virtual-scroll-viewport>
   </mat-list>
-
 </main>

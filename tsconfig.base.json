@@ -17,7 +17,12 @@
     "paths": {
       "@jd/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@xprjs/messenger-components": ["libs/messenger-components/src/index.ts"],
-      "@xprjs/messenger-components/messenger-menu": ["libs/messenger-components/messenger-menu/src/index.ts"],
+      "@xprjs/messenger-components/messenger-menu": [
+        "libs/messenger-components/messenger-menu/src/index.ts"
+      ],
+      "@xprjs/messenger-components/messenger-toolbar": [
+        "libs/messenger-components/messenger-toolbar/src/index.ts"
+      ],
       "@xprjs/messenger-data": ["libs/messenger-data/src/index.ts"],
       "@xprjs/user-data": ["libs/user-data/src/index.ts"]
     }

@@ -6,8 +6,14 @@ mat-list {
   // the 64 comes from the top bar and its depends on screen size
   height: calc(100vh - 64px - 16px);
   //background-color: antiquewhite;
+
+  .cdk-virtual-scroll-content-wrapper {
+    //display: flex;
+    //flex-direction: column;
+    border: 5px solid red;
+  }
 }
 
-.spacer {
-  flex: 1 1 auto;
+.cdk-virtual-scroll-content-wrapper {
+  border: 5px solid green;
 }

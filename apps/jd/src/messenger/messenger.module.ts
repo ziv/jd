@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MessengerShellComponent, MessengerShellModule } from './features/messenger-shell';
-import { MessengerConversationComponent, MessengerConversationModule } from './features/messenger-conversation';
+import {
+  MessengerShellComponent,
+  MessengerShellModule,
+} from './features/messenger-shell';
+import {
+  MessengerConversationComponent,
+  MessengerConversationModule,
+} from './features/messenger-conversation';
 
 @NgModule({
   imports: [
@@ -10,13 +16,13 @@ import { MessengerConversationComponent, MessengerConversationModule } from './f
     RouterModule.forChild([
       {
         path: '',
-        component: MessengerShellComponent
+        component: MessengerShellComponent,
       },
       {
         path: ':id',
-        component: MessengerConversationComponent
-      }
-    ])
-  ]
+        component: MessengerConversationComponent,
+      },
+    ]),
+  ],
 })
-export class MessengerModule { }
+export class MessengerModule {}

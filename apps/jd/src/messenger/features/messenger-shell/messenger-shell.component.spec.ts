@@ -8,9 +8,8 @@ describe('MessengerShellComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MessengerShellComponent ]
-    })
-    .compileComponents();
+      declarations: [MessengerShellComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

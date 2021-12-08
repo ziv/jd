@@ -8,9 +8,8 @@ describe('MessengerMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MessengerMenuComponent ]
-    })
-    .compileComponents();
+      declarations: [MessengerMenuComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -1,14 +1,19 @@
 # Messenger Data Model
 
-## Identifier 
+## Identifier
+
 ```typescript
-type DocumentID = string; 
+type DocumentID = string;
 ```
+
 ## Users
+
 ### User
-* user id (uuid)
+
+- user id (uuid)
 
 ## Conversations
+
 ```typescript
 interface Message {
   id: DocumentID;
@@ -18,19 +23,23 @@ interface Message {
   replayTo?: DocumentID;
 }
 ```
+
 ### Conversation
-* conversation id (uuid)
-* created by (User.id)
-* created at (Date)
-* participants (Participant[])
-* messages ()
+
+- conversation id (uuid)
+- created by (User.id)
+- created at (Date)
+- participants (Participant[])
+- messages ()
 
 ### Participant
-* user (User.id)
-* joined at (Date)
+
+- user (User.id)
+- joined at (Date)
 
 ### Message
-* message id (uuid)
-* user (User.id)
-* content (String)
-* reply to (Message.id) ?
+
+- message id (uuid)
+- user (User.id)
+- content (String)
+- reply to (Message.id) ?

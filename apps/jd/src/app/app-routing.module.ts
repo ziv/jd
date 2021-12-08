@@ -6,15 +6,16 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       {
         path: 'messenger',
-        loadChildren: () => import('../messenger').then(m => m.MessengerModule)
+        loadChildren: () =>
+          import('../messenger').then((m) => m.MessengerModule),
       },
       {
         path: '',
         redirectTo: '/messenger',
-        pathMatch: 'full'
-      }
-    ])
+        pathMatch: 'full',
+      },
+    ]),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

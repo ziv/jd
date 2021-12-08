@@ -6,17 +6,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [
-    MessengerMenuComponent
-  ],
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatIconModule
-  ],
-  exports: [
-    MessengerMenuComponent
-  ]
+  declarations: [MessengerMenuComponent],
+  imports: [CommonModule, MatButtonModule, MatMenuModule, MatIconModule],
+  exports: [MessengerMenuComponent],
 })
-export class MessengerMenuModule { }
+export class MessengerMenuModule {}

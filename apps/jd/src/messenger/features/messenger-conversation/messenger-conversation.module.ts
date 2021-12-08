@@ -5,17 +5,19 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { MessengerMenuModule } from '@xprjs/messenger-components/messenger-menu';
 
 @NgModule({
-  declarations: [
-    MessengerConversationComponent
-  ],
+  declarations: [MessengerConversationComponent],
   imports: [
     CommonModule,
+    HttpClientModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    RouterModule
-  ]
+    MessengerMenuModule,
+    RouterModule,
+  ],
 })
-export class MessengerConversationModule { }
+export class MessengerConversationModule {}

@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { RouterModule } from '@angular/router';
 import { MessengerMenuModule } from '@xprjs/messenger-components/messenger-menu';
+import { MessengerToolbarModule } from '@xprjs/messenger-components/messenger-toolbar';
 import { MessengerShellComponent } from './messenger-shell.component';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MessengerShellComponent } from './messenger-shell.component';
     MatIconModule,
     MatButtonModule,
     MessengerMenuModule,
-    RouterModule
-  ]
+    MessengerToolbarModule,
+    RouterModule,
+  ],
 })
-export class MessengerShellModule { }
+export class MessengerShellModule {}

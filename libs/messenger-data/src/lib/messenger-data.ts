@@ -1,12 +1,11 @@
 import { Collection } from 'mongodb';
-import { Conversation } from './interfaces';
 import { User } from '@xprjs/user-data';
+import { Conversation } from './conversation';
 
 export class MessengerData {
-  constructor(public readonly conversations: Collection<Conversation>) {
-  }
+  constructor(public readonly conversations: Collection<Conversation>) {}
 
-  fetchConversations(user: User, page: number, size: number) {
-    return {user, page, size};
+  createConversation(user: User) {
+    // const conversation = new Conversation(user);
   }
 }

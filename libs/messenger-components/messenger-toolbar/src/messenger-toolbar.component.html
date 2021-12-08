@@ -1,0 +1,13 @@
+<mat-toolbar class="mat-elevation-z5">
+  <ng-container *ngIf="!search">
+    <button mat-icon-button>
+      <mat-icon>rocket_launch</mat-icon>
+    </button>
+    <span>Messenger</span>
+    <span class="v-spacer"></span>
+    <button mat-icon-button (click)="search = true">
+      <mat-icon>search</mat-icon>
+    </button>
+    <jd-messenger-menu></jd-messenger-menu>
+  </ng-container>
+</mat-toolbar>

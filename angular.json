@@ -50,7 +50,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "api-interfaces": {
       "root": "libs/api-interfaces",
@@ -64,7 +65,8 @@
             "lintFilePatterns": ["libs/api-interfaces/**/*.ts"]
           }
         }
-      }
+      },
+      "tags": []
     },
     "jd": {
       "projectType": "application",
@@ -154,7 +156,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "jd-e2e": {
       "root": "apps/jd-e2e",
@@ -181,7 +184,9 @@
             "lintFilePatterns": ["apps/jd-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["jd"]
     },
     "messenger-components": {
       "projectType": "library",
@@ -222,7 +227,8 @@
             ]
           }
         }
-      }
+      },
+      "tags": []
     },
     "messenger-data": {
       "root": "libs/messenger-data",
@@ -255,7 +261,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "user-data": {
       "root": "libs/user-data",
@@ -288,12 +295,9 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/angular",
-    "packageManager": "npm"
   },
   "schematics": {
     "@nrwl/angular": {
@@ -322,6 +326,5 @@
     "@nrwl/angular:component": {
       "style": "scss"
     }
-  },
-  "defaultProject": "jd"
+  }
 }

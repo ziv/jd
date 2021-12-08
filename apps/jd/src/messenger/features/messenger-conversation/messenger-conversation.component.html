@@ -1,12 +1,21 @@
-<mat-toolbar class='mat-elevation-z5'>
-  <button mat-icon-button [routerLink]='[".."]'>
+<mat-toolbar class="mat-elevation-z5">
+  <button mat-icon-button [routerLink]="['..']">
     <mat-icon>arrow_back</mat-icon>
   </button>
   <span>Conversation</span>
+  <span class="v-spacer"></span>
+  <button mat-icon-button [routerLink]="['..']">
+    <mat-icon>search</mat-icon>
+  </button>
+  <jd-messenger-menu></jd-messenger-menu>
 </mat-toolbar>
-<p>messenger-conversation works!</p>
-<p>messenger-conversation works!</p>
-<p>messenger-conversation works!</p>
-<p>messenger-conversation works!</p>
-<p>messenger-conversation works!</p>
-<p>messenger-conversation works!</p>
+<h1>Conversation</h1>
+<h1>Input</h1>
+<!--<pre>{{messages$ | async | json}}</pre>-->
+<!--<pre>{{conversation$ | async | json}}</pre>-->
+<!--<p>messenger-conversation works!</p>-->
+<!--<p>messenger-conversation works!</p>-->
+<!--<p>messenger-conversation works!</p>-->
+<!--<p>messenger-conversation works!</p>-->
+<!--<p>messenger-conversation works!</p>-->
+<!--<p>messenger-conversation works!</p>-->
